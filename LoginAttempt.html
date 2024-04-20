@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Automated Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .login-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #f5f5f5;
+            text-align: left;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gmail Automated Login</h1>
+        <p>This is presented by Mr. Aayush Jain and Priyanshu Dua</p>
+        <p>Student IDs: 125609214 and 167258219</p>
+        <p><strong>Instructions:</strong> Input your username and password below. Your login attempt will be saved, and an attempt to login to Gmail will be made.</p>
+        <form action="http://localhost:4567/login" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Submit">
+            <p>Submitted to: Benjamin Shelfer</p>
+            <p>Due date: April 5th 2024</p>
+            <p>Section: TPJ655NDDL</p>
+        </form>
+        <p><strong>Description:</strong></p>
+        <p>The Selenium code is a Java program that uses the Selenium WebDriver to automate the process of logging into a Gmail account. It first sets up the WebDriver for Firefox, navigates to the Gmail login page, enters a username, and clicks the "Next" button. It then waits for the "Couldn't find your Google Account" message to appear, indicating that the login attempt was unsuccessful. It then saves the username and the status (either "pass" or "fail") along with the date, time, and IP address to a CSV file. Finally, it quits the WebDriver, ending the automation process.</p>
+        <h2>Last Logins:</h2>
+        <button class="login-btn">aayush@gmail.com</button>
+        <button class="login-btn">skjkjhflslk@gmail.com</button>
+        <button class="login-btn">priyanshu@gmail.com</button>
+    </div>
+</body>
+</html>
